@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@300&display=swap");
+body {
+  background: #181719;
+  color: white;
+  margin: 5vh 5vw;
+  font-size: 14px;
+  font-family: "Crimson Pro", serif;
+}
+@media (max-width: 650px) {
+  body {
+    margin-top: 2.5vh;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.menu div {
+  margin: 20px auto;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .logo {
+  border: 1px solid white;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0.5em;
+}
+.header .nav-wrapper {
+  min-width: 60%;
+}
+.header .menu-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 0;
+  list-style-type: none;
+  font-size: 1.2em;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+.header .menu-list li:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+.header .menu-hamburger {
+  display: none;
+}
+.header li {
+  width: auto;
+  text-decoration: none;
+}
+@media (max-width: 650px) {
+  .header .nav-wrapper {
+    display: none;
+  }
+  .header .menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  margin-top: 10vh;
+}
+@media (max-width: 550px) {
+  .content-wrapper {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+}
+.content-wrapper .content {
+  width: 30%;
+  margin-right: 20%;
+}
+@media (max-width: 550px) {
+  .content-wrapper .content {
+    width: unset;
+  }
+}
+.content-wrapper .content h1 {
+  font-family: Lora;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 400;
+}
+.content-wrapper .content p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.6em;
+}
+.content-wrapper .content div {
+  margin-top: 25px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.content-wrapper .content .link:hover {
+  cursor: pointer;
+}
+.content-wrapper .hero {
+  width: 50%;
+}
+@media (max-width: 550px) {
+  .content-wrapper .hero {
+    width: unset;
+    margin-top: 50px;
+  }
+}
+.content-wrapper .hero img {
+  width: 100%;
+  height: 90%;
+}
+.content-wrapper .hero .profile-card {
+  background: #181719;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 30%;
+  max-width: 410px;
+  min-width: 300px;
+  position: absolute;
+  right: 8%;
+  margin-top: -5%;
+  padding: 10px;
+}
+@media (max-width: 900px) {
+  .content-wrapper .hero .profile-card {
+    width: unset;
+    max-width: 300px;
+    min-width: 250px;
+  }
+}
+@media (max-width: 550px) {
+  .content-wrapper .hero .profile-card {
+    margin-top: -10%;
+  }
+}
+.content-wrapper .hero .profile-card .profile-img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+@media (max-width: 900px) {
+  .content-wrapper .hero .profile-card .profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+.content-wrapper .hero .profile-card .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-wrapper .hero .profile-card .title div {
+  margin: 5px;
+}
+.content-wrapper .hero .profile-card .profile-description {
+  font-size: 24px;
+}
+@media (max-width: 900px) {
+  .content-wrapper .hero .profile-card .profile-description {
+    font-size: 16px;
+  }
+}
+.content-wrapper .hero .profile-card p {
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  margin: 5px;
+  letter-spacing: 1px;
+}
+@media (max-width: 700px) {
+  .content-wrapper .hero .profile-card p {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  margin-top: 30vh;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .footer {
+    margin-top: 15vh;
+    font-size: 1.2em;
+  }
+}
+
+.nav-icon {
+  width: 35px;
+}
+.nav-icon:after, .nav-icon:before,
+.nav-icon div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 4px;
+  margin: 7px 0;
+  transition: all 0.2s ease-in-out;
+}
+.nav-icon.active:before {
+  transform: translateY(11px) rotate(135deg);
+}
+.nav-icon.active:after {
+  transform: translateY(-11px) rotate(-135deg);
+}
+.nav-icon.active div {
+  transform: scale(0);
+}/*# sourceMappingURL=styles.css.map */
